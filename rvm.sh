@@ -20,3 +20,6 @@ rvm install 2.2.2
 #installing rails
 echo "installing gem 4.2.4"
 gem install 4.2.4
+
+echo "This program was made by Suyog Soti"
+echo "Please contact him through suyog.soti@gmail.com"
