@@ -5,8 +5,8 @@ apt-get update
 
 #installing necessary dependencies
 echo "installing dependencies"
-apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
-
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+sudo apt-get install curl
 #getting the repo that rvm is in
 echo "Getting the repo that rvm is in"
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -19,7 +19,7 @@ echo "actually downloading rvm from that repo"
 echo "making rvm accessible from everywhere in the terminal"
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
-
+source $HOME/.rvm/scripts/rvm
 #install ruby 2.2.2
 echo "installing ruby 2.2.2"
 rvm install 2.3.0
