@@ -22,11 +22,11 @@ echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
 
 #install ruby 2.2.2
 echo "installing ruby 2.2.2"
-rvm install 2.2.2
+rvm install 2.3.0
 
 #installing rails
 echo "installing gem 4.2.4"
-gem install 4.2.4
+gem install rails
 
 echo "This program was made by Suyog Soti"
 echo "Please contact him through suyog.soti@gmail.com"
