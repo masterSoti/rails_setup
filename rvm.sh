@@ -21,11 +21,14 @@ echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
 source $HOME/.rvm/scripts/rvm
 #install ruby 2.2.2
-echo "installing ruby 2.2.2"
+echo "installing ruby 2.3.0"
 rvm install 2.3.0
 
+echo "making ruby 2.3.0 the default ruby"
+rvm --default use 2.3.0
+
 #installing rails
-echo "installing gem 4.2.4"
+echo "installing the newest version of rails"
 gem install rails
 
 echo "This program was made by Suyog Soti"
