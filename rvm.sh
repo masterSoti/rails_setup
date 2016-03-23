@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #update the system
-apt-get update
+sudo apt-get update
 
 #installing necessary dependencies
 echo "installing dependencies"
