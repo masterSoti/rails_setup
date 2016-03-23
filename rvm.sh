@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "need the super user password to update the system"
 #update the system
 sudo apt-get update
 
@@ -20,6 +21,7 @@ echo "making rvm accessible from everywhere in the terminal"
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
 source $HOME/.rvm/scripts/rvm
+echo "source $HOME/.rvm/scripts/rvm"
 #install ruby 2.2.2
 echo "installing ruby 2.3.0"
 rvm install 2.3.0
